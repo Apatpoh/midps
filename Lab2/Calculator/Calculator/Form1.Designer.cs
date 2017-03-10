@@ -49,6 +49,7 @@
             this.button_add = new System.Windows.Forms.PictureBox();
             this.button_rad = new System.Windows.Forms.PictureBox();
             this.button_egal = new System.Windows.Forms.PictureBox();
+            this.text_box2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.button_7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_9)).BeginInit();
@@ -74,10 +75,11 @@
             // 
             this.text_box.BackColor = System.Drawing.Color.Transparent;
             this.text_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.text_box.Location = new System.Drawing.Point(144, 88);
+            this.text_box.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.text_box.Location = new System.Drawing.Point(203, 88);
             this.text_box.Name = "text_box";
             this.text_box.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.text_box.Size = new System.Drawing.Size(587, 69);
+            this.text_box.Size = new System.Drawing.Size(528, 69);
             this.text_box.TabIndex = 2;
             // 
             // button_7
@@ -88,6 +90,7 @@
             this.button_7.Size = new System.Drawing.Size(141, 105);
             this.button_7.TabIndex = 4;
             this.button_7.TabStop = false;
+            this.button_7.Click += new System.EventHandler(this.button_7_Click);
             // 
             // button_8
             // 
@@ -97,6 +100,7 @@
             this.button_8.Size = new System.Drawing.Size(141, 105);
             this.button_8.TabIndex = 5;
             this.button_8.TabStop = false;
+            this.button_8.Click += new System.EventHandler(this.button_8_Click);
             // 
             // button_9
             // 
@@ -106,6 +110,7 @@
             this.button_9.Size = new System.Drawing.Size(141, 105);
             this.button_9.TabIndex = 6;
             this.button_9.TabStop = false;
+            this.button_9.Click += new System.EventHandler(this.button_9_Click);
             // 
             // button_4
             // 
@@ -115,6 +120,7 @@
             this.button_4.Size = new System.Drawing.Size(141, 105);
             this.button_4.TabIndex = 7;
             this.button_4.TabStop = false;
+            this.button_4.Click += new System.EventHandler(this.button_4_Click);
             // 
             // button_5
             // 
@@ -124,6 +130,7 @@
             this.button_5.Size = new System.Drawing.Size(141, 105);
             this.button_5.TabIndex = 8;
             this.button_5.TabStop = false;
+            this.button_5.Click += new System.EventHandler(this.button_5_Click);
             // 
             // button_6
             // 
@@ -133,6 +140,7 @@
             this.button_6.Size = new System.Drawing.Size(141, 105);
             this.button_6.TabIndex = 9;
             this.button_6.TabStop = false;
+            this.button_6.Click += new System.EventHandler(this.button_6_Click);
             // 
             // button_3
             // 
@@ -142,6 +150,7 @@
             this.button_3.Size = new System.Drawing.Size(141, 105);
             this.button_3.TabIndex = 10;
             this.button_3.TabStop = false;
+            this.button_3.Click += new System.EventHandler(this.button_3_Click);
             // 
             // button_2
             // 
@@ -151,6 +160,7 @@
             this.button_2.Size = new System.Drawing.Size(141, 105);
             this.button_2.TabIndex = 11;
             this.button_2.TabStop = false;
+            this.button_2.Click += new System.EventHandler(this.button_2_Click);
             // 
             // button_1
             // 
@@ -160,6 +170,7 @@
             this.button_1.Size = new System.Drawing.Size(141, 105);
             this.button_1.TabIndex = 12;
             this.button_1.TabStop = false;
+            this.button_1.Click += new System.EventHandler(this.button_1_Click);
             // 
             // button_0
             // 
@@ -169,6 +180,7 @@
             this.button_0.Size = new System.Drawing.Size(141, 105);
             this.button_0.TabIndex = 13;
             this.button_0.TabStop = false;
+            this.button_0.Click += new System.EventHandler(this.button_0_Click);
             // 
             // button_ch_sg
             // 
@@ -178,6 +190,7 @@
             this.button_ch_sg.Size = new System.Drawing.Size(141, 105);
             this.button_ch_sg.TabIndex = 14;
             this.button_ch_sg.TabStop = false;
+            this.button_ch_sg.Click += new System.EventHandler(this.button_ch_sg_Click);
             // 
             // button_dot
             // 
@@ -187,6 +200,7 @@
             this.button_dot.Size = new System.Drawing.Size(141, 105);
             this.button_dot.TabIndex = 15;
             this.button_dot.TabStop = false;
+            this.button_dot.Click += new System.EventHandler(this.button_dot_Click);
             // 
             // button_imp
             // 
@@ -196,6 +210,7 @@
             this.button_imp.Size = new System.Drawing.Size(141, 105);
             this.button_imp.TabIndex = 16;
             this.button_imp.TabStop = false;
+            this.button_imp.Click += new System.EventHandler(this.button_imp_Click);
             // 
             // button_pw
             // 
@@ -205,6 +220,7 @@
             this.button_pw.Size = new System.Drawing.Size(141, 105);
             this.button_pw.TabIndex = 17;
             this.button_pw.TabStop = false;
+            this.button_pw.Click += new System.EventHandler(this.button_pw_Click);
             // 
             // button_inm
             // 
@@ -214,6 +230,7 @@
             this.button_inm.Size = new System.Drawing.Size(141, 105);
             this.button_inm.TabIndex = 18;
             this.button_inm.TabStop = false;
+            this.button_inm.Click += new System.EventHandler(this.button_inm_Click);
             // 
             // button_min
             // 
@@ -223,6 +240,7 @@
             this.button_min.Size = new System.Drawing.Size(141, 105);
             this.button_min.TabIndex = 19;
             this.button_min.TabStop = false;
+            this.button_min.Click += new System.EventHandler(this.button_min_Click);
             // 
             // button_add
             // 
@@ -232,6 +250,7 @@
             this.button_add.Size = new System.Drawing.Size(141, 105);
             this.button_add.TabIndex = 20;
             this.button_add.TabStop = false;
+            this.button_add.Click += new System.EventHandler(this.button_add_Click);
             // 
             // button_rad
             // 
@@ -241,6 +260,7 @@
             this.button_rad.Size = new System.Drawing.Size(141, 105);
             this.button_rad.TabIndex = 21;
             this.button_rad.TabStop = false;
+            this.button_rad.Click += new System.EventHandler(this.button_rad_Click);
             // 
             // button_egal
             // 
@@ -250,6 +270,18 @@
             this.button_egal.Size = new System.Drawing.Size(141, 219);
             this.button_egal.TabIndex = 22;
             this.button_egal.TabStop = false;
+            this.button_egal.Click += new System.EventHandler(this.button_egal_Click);
+            // 
+            // text_box2
+            // 
+            this.text_box2.BackColor = System.Drawing.Color.Transparent;
+            this.text_box2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.text_box2.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.text_box2.Location = new System.Drawing.Point(137, 88);
+            this.text_box2.Name = "text_box2";
+            this.text_box2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.text_box2.Size = new System.Drawing.Size(60, 69);
+            this.text_box2.TabIndex = 23;
             // 
             // Calculator
             // 
@@ -258,6 +290,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(882, 753);
+            this.Controls.Add(this.text_box2);
             this.Controls.Add(this.button_egal);
             this.Controls.Add(this.button_rad);
             this.Controls.Add(this.button_add);
@@ -328,6 +361,7 @@
         private System.Windows.Forms.PictureBox button_add;
         private System.Windows.Forms.PictureBox button_rad;
         private System.Windows.Forms.PictureBox button_egal;
+        private System.Windows.Forms.Label text_box2;
     }
 }
 
