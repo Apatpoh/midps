@@ -51,6 +51,7 @@
             this.button_egal = new System.Windows.Forms.PictureBox();
             this.text_box2 = new System.Windows.Forms.Label();
             this.button_clear = new System.Windows.Forms.PictureBox();
+            this.button_delete = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.button_7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_9)).BeginInit();
@@ -71,6 +72,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.button_rad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_egal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_clear)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.button_delete)).BeginInit();
             this.SuspendLayout();
             // 
             // text_box
@@ -295,6 +297,16 @@
             this.button_clear.TabStop = false;
             this.button_clear.Click += new System.EventHandler(this.button_clear_Click);
             // 
+            // button_delete
+            // 
+            this.button_delete.BackColor = System.Drawing.Color.Transparent;
+            this.button_delete.Location = new System.Drawing.Point(737, 109);
+            this.button_delete.Name = "button_delete";
+            this.button_delete.Size = new System.Drawing.Size(67, 35);
+            this.button_delete.TabIndex = 25;
+            this.button_delete.TabStop = false;
+            this.button_delete.Click += new System.EventHandler(this.button_delete_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -302,6 +314,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(882, 753);
+            this.Controls.Add(this.button_delete);
             this.Controls.Add(this.button_clear);
             this.Controls.Add(this.text_box2);
             this.Controls.Add(this.button_egal);
@@ -349,6 +362,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.button_rad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_egal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_clear)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.button_delete)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -377,6 +391,7 @@
         private System.Windows.Forms.PictureBox button_egal;
         private System.Windows.Forms.Label text_box2;
         private System.Windows.Forms.PictureBox button_clear;
+        private System.Windows.Forms.PictureBox button_delete;
     }
 }
 

@@ -183,9 +183,30 @@ namespace Calculator
             text_box2.Text = "";
         }
 
+        private void button_delete_Click(object sender, EventArgs e)
+        {
+            text_box.Text = text_box.Text.Remove(text_box.Text.Length - 1);
+            if (text_box2.Text != string.Empty)
+                text_box2.Text = string.Empty;
+        }
+
         private void button_rad_Click(object sender, EventArgs e)
         {
-            text_box.Text += "√";
+            if (text_box.Text == string.Empty)
+            {
+                text_box.Text = "0";
+                n1 = text_box.Text;
+                text_box.Text = "";
+                text_box2.Text = "√";
+                sign = 6;
+            }
+            else
+            {
+                n1 = text_box.Text;
+                text_box.Text = "";
+                text_box2.Text = "√";
+                sign = 6;
+            }
         }
 
         private void button_egal_Click(object sender, EventArgs e)
@@ -220,6 +241,10 @@ namespace Calculator
                         c = c * a;
                         i++;
                     }
+                    text_box.Text = Convert.ToString(c);
+                    break;
+                case 6:
+                    c = Math.Pow(a, 1 / b);
                     text_box.Text = Convert.ToString(c);
                     break;
             }
