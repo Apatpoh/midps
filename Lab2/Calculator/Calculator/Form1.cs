@@ -74,7 +74,11 @@ namespace Calculator
 
         private void button_ch_sg_Click(object sender, EventArgs e)
         {
-            
+            double temp;
+            temp = Convert.ToDouble(text_box.Text);
+            temp = temp * (-1);
+            text_box.Text = Convert.ToString(temp);
+
         }
 
         private void button_dot_Click(object sender, EventArgs e)
@@ -211,6 +215,10 @@ namespace Calculator
 
         private void button_egal_Click(object sender, EventArgs e)
         {
+            if (text_box.Text == string.Empty)
+            {
+                text_box.Text = "0";
+            }
             n2 = text_box.Text;
             text_box.Text = "";
             a = Convert.ToDouble(n1);
