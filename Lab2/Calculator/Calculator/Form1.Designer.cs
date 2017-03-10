@@ -50,6 +50,7 @@
             this.button_rad = new System.Windows.Forms.PictureBox();
             this.button_egal = new System.Windows.Forms.PictureBox();
             this.text_box2 = new System.Windows.Forms.Label();
+            this.button_clear = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.button_7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_9)).BeginInit();
@@ -69,6 +70,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.button_add)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_rad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_egal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.button_clear)).BeginInit();
             this.SuspendLayout();
             // 
             // text_box
@@ -283,6 +285,16 @@
             this.text_box2.Size = new System.Drawing.Size(60, 69);
             this.text_box2.TabIndex = 23;
             // 
+            // button_clear
+            // 
+            this.button_clear.BackColor = System.Drawing.Color.Transparent;
+            this.button_clear.Location = new System.Drawing.Point(81, 102);
+            this.button_clear.Name = "button_clear";
+            this.button_clear.Size = new System.Drawing.Size(50, 49);
+            this.button_clear.TabIndex = 24;
+            this.button_clear.TabStop = false;
+            this.button_clear.Click += new System.EventHandler(this.button_clear_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -290,6 +302,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(882, 753);
+            this.Controls.Add(this.button_clear);
             this.Controls.Add(this.text_box2);
             this.Controls.Add(this.button_egal);
             this.Controls.Add(this.button_rad);
@@ -335,6 +348,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.button_add)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_rad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_egal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.button_clear)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -362,6 +376,7 @@
         private System.Windows.Forms.PictureBox button_rad;
         private System.Windows.Forms.PictureBox button_egal;
         private System.Windows.Forms.Label text_box2;
+        private System.Windows.Forms.PictureBox button_clear;
     }
 }
 

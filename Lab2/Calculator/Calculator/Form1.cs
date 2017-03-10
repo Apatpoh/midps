@@ -84,30 +84,103 @@ namespace Calculator
 
         private void button_imp_Click(object sender, EventArgs e)
         {
-            text_box.Text += "/";
+            if (text_box.Text == string.Empty)
+            {
+                text_box.Text = "0";
+                n1 = text_box.Text;
+                text_box.Text = "";
+                text_box2.Text = "/";
+                sign = 4;
+            }
+            else
+            {
+                n1 = text_box.Text;
+                text_box.Text = "";
+                text_box2.Text = "/";
+                sign = 4;
+            }
         }
 
         private void button_inm_Click(object sender, EventArgs e)
         {
-            text_box.Text += "x";
+            if (text_box.Text == string.Empty)
+            {
+                text_box.Text = "0";
+                n1 = text_box.Text;
+                text_box.Text = "";
+                text_box2.Text = "x";
+                sign = 3;
+            }
+            else
+            {
+                n1 = text_box.Text;
+                text_box.Text = "";
+                text_box2.Text = "x";
+                sign = 3;
+            }
         }
 
         private void button_min_Click(object sender, EventArgs e)
         {
-            text_box.Text += "-";
+            if (text_box.Text == string.Empty)
+            {
+                text_box.Text = "0";
+                n1 = text_box.Text;
+                text_box.Text = "";
+                text_box2.Text = "-";
+                sign = 2;
+            }
+            else
+            {
+                n1 = text_box.Text;
+                text_box.Text = "";
+                text_box2.Text = "-";
+                sign = 2;
+            }
         }
 
         private void button_add_Click(object sender, EventArgs e)
         {
-            n1 = text_box.Text;
-            text_box.Text = "0";
-            text_box2.Text = "+";
-            sign = 1;
+            if (text_box.Text == string.Empty)
+            {
+                text_box.Text = "0";
+                n1 = text_box.Text;
+                text_box.Text = "";
+                text_box2.Text = "+";
+                sign = 1;
+            }
+            else
+            {
+                n1 = text_box.Text;
+                text_box.Text = "";
+                text_box2.Text = "+";
+                sign = 1;
+            }
         }
 
         private void button_pw_Click(object sender, EventArgs e)
         {
-            text_box.Text += "^";
+            if (text_box.Text == string.Empty)
+            {
+                text_box.Text = "0";
+                n1 = text_box.Text;
+                text_box.Text = "";
+                text_box2.Text = "^";
+                sign = 5;
+            }
+            else
+            {
+                n1 = text_box.Text;
+                text_box.Text = "";
+                text_box2.Text = "^";
+                sign = 5;
+            }
+        }
+
+        private void button_clear_Click(object sender, EventArgs e)
+        {
+            text_box.Text = "";
+            text_box2.Text = "";
         }
 
         private void button_rad_Click(object sender, EventArgs e)
@@ -128,13 +201,26 @@ namespace Calculator
                     text_box.Text = Convert.ToString(c);
                     break;
                 case 2:
-                    Console.WriteLine("Case 2");
+                    c = a - b;
+                    text_box.Text = Convert.ToString(c);
                     break;
                 case 3:
-                    Console.WriteLine("Default case");
+                    c = a * b;
+                    text_box.Text = Convert.ToString(c);
                     break;
                 case 4:
-                    Console.WriteLine("Case 2");
+                    c = a / b;
+                    text_box.Text = Convert.ToString(c);
+                    break;
+                case 5:
+                    int i = 1;
+                    c = a;
+                    while (i < b)
+                    {
+                        c = c * a;
+                        i++;
+                    }
+                    text_box.Text = Convert.ToString(c);
                     break;
             }
         }
