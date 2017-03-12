@@ -62,25 +62,6 @@ namespace Calculator
             text_box.Text += "8";
         }
 
-        private void button_9_Click(object sender, EventArgs e)
-        {
-            text_box.Text += "9";
-        }
-
-        private void button_0_Click(object sender, EventArgs e)
-        {
-            text_box.Text += "0";
-        }
-
-        private void button_ch_sg_Click(object sender, EventArgs e)
-        {
-            double temp;
-            temp = Convert.ToDouble(text_box.Text);
-            temp = temp * (-1);
-            text_box.Text = Convert.ToString(temp);
-
-        }
-
         private void button_dot_Click(object sender, EventArgs e)
         {
                 text_box.Text += ".";
