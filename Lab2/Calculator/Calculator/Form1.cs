@@ -223,6 +223,7 @@ namespace Calculator
             text_box.Text = "";
             a = Convert.ToDouble(n1);
             b = Convert.ToDouble(n2);
+            text_box2.Text = "=";
             switch (sign)
             {
                 case 1:
