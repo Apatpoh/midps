@@ -1,0 +1,159 @@
+body{
+    margin: 0;
+    background-color: #0A0A0A;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.global_div 
+{
+    width: 1200px;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.fromcenter
+{
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+ul.product
+{
+    list-style-type: none;
+    margin: 0;
+    background-color: #FFFFFF;
+    padding: 20px 0px 20px 0px;
+    display: block;
+    position: relative;
+    border-radius: 8px;
+}
+
+ul.product li.categ
+{
+    width: 285px;
+    display: inline-block;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+ul.product li.categ input[type=submit] /*cnopca add to cart*/
+{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 95%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+h1
+{
+    font-family: "Fira Mono","Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 10px;
+    color: white;
+}
+
+.footer
+{
+    display:block;
+    width: 100%;
+    height: 50px;
+    background-color: #333333;
+    color:white;
+    font-size: 20px;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+}
+
+div a img.category{
+    padding: 20px 5px 20px 5px;
+    transition: all .15s ease-in-out; 
+}
+
+div a img.category:hover
+{
+    transform: scale(1.2);
+}
+
+div h4
+{
+    margin: 0;
+}
+
+p.info_prod
+{
+    color: #777777;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+li.categ input.input_name
+{
+    border-style: none;
+    font-size: 20px;
+    text-align: center;
+    font-style: bold;
+}
+
+#prod_nav {  
+    width:1200px;
+    margin-left: 8.5%;
+}
+
+#prod_nav ul {  
+    width:1200px;
+    margin:0 auto;  
+}
+
+#prod_nav li {  
+    float:left;
+    width:240px;
+    list-style-type:none;
+    text-align:center;
+}
+
+#prod_nav a {
+    color:#FAFAFA;
+    display:block;
+    padding:10px 0 45px;
+    position:relative;
+    word-spacing:-2px;
+    font-size:21px;     
+    height:222px;
+    text-decoration:none;
+}   
+
+#prod_nav a.current {
+    background: #f0f0f0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    float: none;
+    margin:0;
+    border-bottom: 3px solid #000
+}
+
+#prod_nav img {
+    background-color:#fff;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    margin:10px 0 8px 10px;
+    padding:4px;        
+    display:block;
+}
+
+#prod_nav strong {
+    display:block;      
+}
+
